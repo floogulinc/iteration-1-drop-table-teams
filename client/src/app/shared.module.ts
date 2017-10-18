@@ -25,7 +25,7 @@ import { FlexLayoutModule, } from '@angular/flex-layout';
 
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {PageSliderModule} from "ng2-page-slider";
+import {NgxSiemaModule} from "ngx-siema";
 
 const FLEX_LAYOUT_MODULES: any[] = [
     FlexLayoutModule,
@@ -59,8 +59,8 @@ const COVALENT_MODULES: any[] = [
 ];
 
 const OTHER_MODULES: any[] = [
-    PageSliderModule
-]
+    NgxSiemaModule,
+];
 
 
 @NgModule({

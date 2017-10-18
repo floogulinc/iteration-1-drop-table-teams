@@ -22,6 +22,7 @@ import {PlayComponent} from "./play-component/play.component";
 import {MdDialog} from "@angular/material";
 import {NewCardDialogComponent} from "./new-card-dialog/new-card-dialog.component";
 import {NewDeckDialogComponent} from "./new-deck-dialog/new-deck-dialog.component";
+import {NgxSiemaService} from "ngx-siema";
 
 @NgModule({
 
@@ -50,6 +51,7 @@ import {NewDeckDialogComponent} from "./new-deck-dialog/new-deck-dialog.componen
         DeckService,
         MdDialog,
         MdSnackBar,
+        NgxSiemaService,
         {provide: APP_BASE_HREF, useValue: '/'},
         {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true}
     ],

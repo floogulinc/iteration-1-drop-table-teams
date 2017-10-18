@@ -3379,9 +3379,11 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
-ng2-page-slider@^0.10.1:
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/ng2-page-slider/-/ng2-page-slider-0.10.1.tgz#c1244e22dac3c8782b1a2f12402a434ab481f58a"
+ngx-siema@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-siema/-/ngx-siema-2.0.1.tgz#a9d4c32962b528e7c10c9fb12aaf37ea75d2f753"
+  dependencies:
+    siema "^1.4.6"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4741,6 +4743,10 @@ shebang-command@^1.2.0:
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
+
+siema@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/siema/-/siema-1.4.6.tgz#f13a60c80073e52ec3fde0e9bf642825b64f4608"
 
 signal-exit@^3.0.0:
   version "3.0.2"

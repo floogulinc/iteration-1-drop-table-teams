@@ -3,6 +3,7 @@ import {DeckService} from "../deck/deck.service";
 import {ActivatedRoute} from "@angular/router";
 import {Deck} from "../deck/deck";
 import {CardState} from "./CardState";
+import {NgxSiemaOptions, NgxSiemaService} from "ngx-siema";
 
 
 
@@ -24,9 +25,31 @@ export class PlayComponent implements OnInit {
 
     public cardStates: CardState[];
 
+    options: NgxSiemaOptions = {
+        selector: '.siema',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        threshold: 20,
+        loop: false,
+        onInit: () => {
+            // runs immediately after first initialization
+        },
+        onChange: () => {
+            // runs after slide change
+        },
+    };
 
-    constructor(public deckService : DeckService, private route: ActivatedRoute) {
+
+    constructor(public deckService : DeckService, private route: ActivatedRoute, private ngxSiemaService: NgxSiemaService) {
         this.cardStates = [];
+    }
+
+    public nextSlide(): void {
+        this.ngxSiemaService.next(1)
+            .subscribe((data: any) => console.log(data));
     }
 
 
